@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="720" prefWidth="1240.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sn.groupeisi.devoir0124.controllers.LoginController">
+   <children>
+      <AnchorPane layoutX="-12.0" prefHeight="625.0" prefWidth="1016.0">
+         <children>
+            <ImageView fitHeight="720.0" fitWidth="1254.0" layoutX="12.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/francesco-ungaro-tMSAoDuLnXE-unsplash.jpg" /> 
+               </image>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <effect>
+                  <Blend />
+               </effect>
+            </ImageView>
+            <Text fill="#d00000" layoutX="436.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Credentials">
+               <font>
+                  <Font name="Bell MT" size="56.0" />
+               </font>
+            </Text>
+            <TextField fx:id="tfd_login" layoutX="749.0" layoutY="434.0" prefHeight="26.0" prefWidth="214.0" promptText="adresse mail">
+               <font>
+                  <Font size="14.0" />
+               </font></TextField>
+            <Text layoutX="806.0" layoutY="411.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" wrappingWidth="162.9830722808838">
+               <font>
+                  <Font name="Calibri" size="36.0" />
+               </font></Text>
+            <Text layoutX="749.0" layoutY="515.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mot de passe">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+            <PasswordField fx:id="tfd_password" layoutX="749.0" layoutY="537.0" prefHeight="26.0" prefWidth="214.0" promptText="Mot de passe" />
+            <Button fx:id="btn_connection" layoutX="547.0" layoutY="363.0" mnemonicParsing="false" onAction="#connection_click" text="Connexion" />
+         </children>
+         <effect>
+            <Blend />
+         </effect>
+      </AnchorPane>
+   </children>
+</AnchorPane>
